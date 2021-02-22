@@ -80,7 +80,7 @@ export default  class Displayreport extends React.Component {
     componentDidMount() {
 
         const param = new URLSearchParams(this.props.location.search);
-        console.log(param.get("name"))
+      
         const nameofemployee = param.get("name")
         this.setState({ nameofemployee : nameofemployee })
 

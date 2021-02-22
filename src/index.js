@@ -9,7 +9,7 @@ import {  Route,BrowserRouter,Switch  } from 'react-router-dom';
 import history from './utils/History'
 
 ReactDOM.render(
-  <BrowserRouter history={history}>
+  <BrowserRouter >
 
         <Switch>
                 <Route exact path="/" component={App} />
