@@ -2,12 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Overview from './Overview'
 import reportWebVitals from './reportWebVitals';
 
+import {  Route,BrowserRouter,Switch  } from 'react-router-dom';
+import history from './utils/History'
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter history={history}>
+
+        <Switch>
+                <Route exact path="/" component={App} />
+                <Route path="/overview" component={Overview} />  
+        </Switch>
+   
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
